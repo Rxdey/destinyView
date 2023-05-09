@@ -1,6 +1,6 @@
 .RxCard {
     --txt-color: #fff;
-    --card-width: 120px;
+    --card-width: 160px;
     --card-height: calc(var(--card-width) / 440 * 670);
     font-size: 14px;
     color: var(--txt-color);
@@ -75,7 +75,7 @@
     color: #fff;
     font-size: 11px;
     position: absolute;
-    top: 57%;
+    top: 55%;
     width: 100%;
     transform: scale(0.8);
 }
