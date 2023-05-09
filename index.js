@@ -3,21 +3,22 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  光看名字有的不知道是什么卡，所以做个命运卡预览
-// @author       You
+// @author       Rxdey
 // @match        https://edit.filtereditor.cn/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=filtereditor.cn
 // @grant        GM_addStyle
 // @require      https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js
+// @license MIT
 // ==/UserScript==
 
 (function () {
     /**
-     * 这是之前写的查看器里的代码
+     * 高级编辑模式中，点击卡片弹出卡片奖励详情
      * 数据是直接编年史抓的
      * 要更新的话就是 去编年史: https://poedb.tw/cn/Divination_Cards#命运卡物品
      * 打开控制台，复制下面的代码运行
      * 替换掉ALL_CARD_DATA就行了
-     * 
+     *
         const copyToClipboard = (txt) => {
             const node = document.createElement('textarea');
             node.value = txt;
